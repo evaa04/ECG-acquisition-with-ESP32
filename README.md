@@ -7,23 +7,6 @@ Design of a custom electrocardiogram (ECG) acquisition system including a dedica
 
 ---
 
-## 🚀 Project Overview
-
-This project explores the development of a low-cost biomedical instrumentation system for measuring cardiac electrical activity.
-
-The system integrates:
-
-- Custom-designed ECG analog front-end PCB
-- Galvanic isolation for patient safety
-- ESP32-based data acquisition
-- ADS1115 16-bit analog-to-digital converter
-- Serial data transmission
-- MATLAB-based signal visualization and processing
-
-The objective of the project is to combine analog electronics, embedded systems and signal processing for physiological signal acquisition.
-
----
-
 ## ⚡ System Architecture
 
 The acquisition chain is structured as follows:
