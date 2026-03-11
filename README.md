@@ -3,7 +3,7 @@
   <img src="figures/PCB_first.png" width="100%">
 </p>
 
-Design of a custom electrocardiogram (ECG) acquisition system including a dedicated analog front-end PCB with galvanic isolation, ESP32-based signal acquisition, and MATLAB visualization for cardiac signal analysis.
+Design of a custom electrocardiogram (ECG) acquisition system including a dedicated analog front-end PCB with galvanic isolation, , ESP32-based signal acquisition, and MATLAB visualization for cardiac signal analysis.
 
 ---
 
@@ -44,7 +44,7 @@ The system includes a custom PCB designed to acquire and condition the ECG signa
 
 Main hardware components:
 
-- Instrumentation amplifier and analog filtering stages
+- Instrumentation amplifier and analog filtering stages (TL082 and INA114)
 - Galvanic isolation stage (ISO124)
 - ADS1115 16-bit ADC
 - ESP32 microcontroller interface
@@ -53,19 +53,4 @@ Main hardware components:
   <img src="figures/pcb_schematic.png" width="60%">
 </p>
 
-The PCB schematic and layout files are available in the `hardware/` folder.
-
----
-
-## 💻 Firmware
-
-The ESP32 firmware is written using the Arduino framework.
-
-The microcontroller reads the differential voltage from the ADS1115 and sends the ECG signal through the serial port.
-
-Example code:
-
-```cpp
-short diferencia_0_1 = ads.readADC_Differential_0_1();
-float voltios = (diferencia_0_1 * factorEscala) / 1000.0;
-Serial.println(voltios, 4);
+The PCB schematic and layout files are available in the repository
