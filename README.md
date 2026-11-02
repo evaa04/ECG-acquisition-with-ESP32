@@ -44,9 +44,9 @@ Main hardware components:
 
 Visual inspection of the final, fully assembled and soldered printed circuit board:
 
-| 📐 Top Layer Assembly | 📐 Bottom Layer Soldering |
+| Top Layer Assembly | Bottom Layer Soldering |
 | :---: | :---: |
-| <img src="figures/PCB_TOP_ASSEMBLED.png" width="100%"> | <img src="figures/PCB_BOTTOM_SOLDERED.png" width="100%"> |
+| <img src="figures/PCB_top.jpeg" width="100%"> | <img src="figures/PCB_bottom.jpeg" width="100%"> |
 | *Top view showing component placement and active ICs.* | *Bottom view showing the final solder joints and trace routing.* |
 
 ---
