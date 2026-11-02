@@ -29,14 +29,25 @@ The ESP32 reads the differential ECG signal from the ADS1115 and streams the dat
 The system includes a custom PCB designed to acquire and condition the ECG signal.
 
 Main hardware components:
-- Instrumentation amplifier and analog filtering stages (**TL082** and **INA114**)
-- Galvanic isolation stage (**ISO124**)
-- **ADS1115** 16-bit ADC
-- **ESP32** microcontroller interface
+- **INA114 & TL082:** Instrumentation amplifier and operational amplifiers used for high-common-mode rejection amplification and active analog filtering stages.
+- **ISO124:** Linear isolation amplifier providing a critical galvanic isolation stage to guarantee patient safety against electrical shocks.
+- **ADS1115:** High-precision 16-bit ADC used to digitize the conditioned analog ECG signal with low noise.
+- **ESP32 Interface:** Microcontroller connection layer responsible for sampling the ADC data over I2C and managing high-speed serial communication.
 
 <p align="center">
   <img src="figures/ECG_board.png" width="60%">
 </p>
+
+---
+
+## 🛠️ Assembled Hardware & Soldering Showcase
+
+Visual inspection of the final, fully assembled and soldered printed circuit board:
+
+| 📐 Top Layer Assembly | 📐 Bottom Layer Soldering |
+| :---: | :---: |
+| <img src="figures/PCB_TOP_ASSEMBLED.png" width="100%"> | <img src="figures/PCB_BOTTOM_SOLDERED.png" width="100%"> |
+| *Top view showing component placement and active ICs.* | *Bottom view showing the final solder joints and trace routing.* |
 
 ---
 
