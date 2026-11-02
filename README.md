@@ -1,6 +1,10 @@
 # ❤️ Custom ECG Acquisition System
 
-A medical-grade Electrocardiogram (ECG) acquisition system featuring a custom analog front-end with galvanic isolation, 16-bit digitization, ESP32 processing, and MATLAB visualization.
+<p align="center">
+  <img src="figures/PCB_first.png" width="100%">
+</p>
+
+Design of a custom electrocardiogram (ECG) acquisition system including a dedicated analog front-end PCB with galvanic isolation, ESP32-based signal acquisition, and MATLAB visualization for cardiac signal analysis.
 
 ---
 
@@ -28,21 +32,11 @@ Main hardware components:
 
 ---
 
-## 📁 Repository Blueprint & Documentation
+## 📁 Engineering Blueprints & Documentation
 
-### 🛠️ Hardware Showcase
-<p align="center">
-  <img src="figures/PCB_first.png" width="100%">
-</p>
+The complete technical design documentation is available for viewing and download below:
 
-The full schematic blueprints and board layout files are available below:
-*   📄 **[View PCB Layout Blueprint (PDF)](figures/ECG_board.png)**
-*   📄 **[View Schematic Diagram Blueprint (PDF)](figures/ECG_schematic.png)**
+*   📄 **[View PCB Layout Blueprint (PDF)](figures/pcb_design.pdf)**
+*   📄 **[View Schematic Diagram Blueprint (PDF)](figures/pcb_schematic.pdf)**
 
----
-
-## 📁 Repository Structure
-
-*   📁 **`code/`**: ESP32 firmware for data acquisition.
-*   📁 **`hardware/`**: Native CAD design files (`.sch` and `.brd`).
-*   📁 **`figures/`**: Visual documentation and export files.
+The native CAD design files (`.sch` and `.brd`) are also available directly in the root of the repository.
