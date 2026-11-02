@@ -16,6 +16,10 @@ The acquisition chain is structured as follows:
 ECG Electrodes ➔ Analog Front-End PCB ➔ ADS1115 ADC ➔ ESP32 Microcontroller ➔ MATLAB Visualization
 ```
 
+<p align="center">
+  <img src="figures/ECG_schematic.png" width="60%">
+</p>
+
 The ESP32 reads the differential ECG signal from the ADS1115 and streams the data via serial communication for external visualization and processing.
 
 ---
@@ -30,13 +34,15 @@ Main hardware components:
 - **ADS1115** 16-bit ADC
 - **ESP32** microcontroller interface
 
+<p align="center">
+  <img src="figures/ECG_board.png" width="60%">
+</p>
+
 ---
 
 ## 📁 Engineering Blueprints & Documentation
 
-The complete technical design documentation is available for viewing and download below:
+The native CAD design files are available directly in the root of the repository:
 
-*   📄 **[View PCB Layout Blueprint (PDF)](figures/pcb_design.pdf)**
-*   📄 **[View Schematic Diagram Blueprint (PDF)](figures/pcb_schematic.pdf)**
-
-The native CAD design files (`.sch` and `.brd`) are also available directly in the root of the repository.
+*   🛠️ **[View PCB Layout File (.brd)](ECG_final_project.brd)**
+*   📐 **[View Schematic Diagram File (.sch)](ECG_final_project.sch)**
