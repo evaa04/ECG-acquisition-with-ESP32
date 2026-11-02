@@ -1,39 +1,45 @@
 # ❤️ Custom ECG Acquisition System
-<p align="center">
-  <img src="figures/PCB_first.png" width="100%">
-</p>
 
-Design of a custom electrocardiogram (ECG) acquisition system including a dedicated analog front-end PCB with galvanic isolation, , ESP32-based signal acquisition, and MATLAB visualization for cardiac signal analysis.
+A medical-grade Electrocardiogram (ECG) acquisition system featuring a custom analog front-end with galvanic isolation, 16-bit digitization, ESP32 processing, and MATLAB visualization.
+
+---
+
+## 📸 Project Gallery
+
+### ⚡ Hardware Showcase
+
+| 🛠️ Soldered & Assembled PCB | 🎛️ Top Interface / Buttons |
+| :---: | :---: |
+| <img src="figures/PCB_first.png" width="100%"> | <img src="figures/top_soldered.png" width="100%"> |
+
+### 🖥️ Engineering Design (PDF Export)
+
+| 📦 PCB Layout | 📐 Schematic Diagram |
+| :---: | :---: |
+| <img src="figures/pcb_design.png" width="100%"> | <img src="figures/pcb_schematic.png" width="100%"> |
 
 ---
 
 ## ⚡ System Architecture
 
-The acquisition chain is structured as follows:
+```text
+ECG Electrodes ➔ Analog Front-End ➔ ISO124 Isolation ➔ ADS1115 ADC ➔ ESP32 MCU ➔ MATLAB
+```
 
-ECG electrodes → Analog front-end PCB → ADS1115 ADC → ESP32 microcontroller → MATLAB visualization
-
-<p align="center">
-  <img src="figures/ECG_scheatic.pdf" width="60%">
-</p>
-
-The ESP32 reads the differential ECG signal from the ADS1115 and streams the data via serial communication for external visualization and processing.
+The **ESP32** reads high-resolution differential data from the ADS1115 via I2C and streams it over Serial to MATLAB for real-time digital filtering and analysis.
 
 ---
 
-## 🧠 Hardware Design
+## 🧠 Hardware Features
 
-The system includes a custom PCB designed to acquire and condition the ECG signal.
+*   **Amplification & Filtering:** High-common-mode rejection ratio using **INA114** and active filtering with **TL082**.
+*   **Galvanic Isolation:** Critical patient safety stage using the **ISO124** linear isolation amplifier.
+*   **Precision Digitization:** External **ADS1115** 16-bit ADC for low-noise biopotential conversion.
 
-Main hardware components:
+---
 
-- Instrumentation amplifier and analog filtering stages (TL082 and INA114)
-- Galvanic isolation stage (ISO124)
-- ADS1115 16-bit ADC
-- ESP32 microcontroller interface
+## 📁 Repository Structure
 
-<p align="center">
-  <img src="figures/ECG_board.pdf" width="60%">
-</p>
-
-The PCB schematic and layout files are available in the repository
+*   📁 **`code/`**: ESP32 firmware for high-speed data acquisition.
+*   📁 **`hardware/`**: Native CAD design files (`.sch` and `.brd`).
+*   📁 **`figures/`**: Visual documentation, pictures, and export PDFs.
