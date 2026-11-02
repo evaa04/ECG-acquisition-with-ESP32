@@ -55,5 +55,5 @@ Visual inspection of the final, fully assembled and soldered printed circuit boa
 
 The native CAD design files are available directly in the root of the repository:
 
-*   🛠️ **[View PCB Layout File (.brd)](ECG_final_project.brd)**
-*   📐 **[View Schematic Diagram File (.sch)](ECG_final_project.sch)**
+*   🛠️ **[View PCB Layout File (.brd)](hardware/ECG_final_project.brd)**
+*   📐 **[View Schematic Diagram File (.sch)](hardware/ECG_final_project.sch)**
