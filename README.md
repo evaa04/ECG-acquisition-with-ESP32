@@ -16,7 +16,7 @@ A medical-grade Electrocardiogram (ECG) acquisition system featuring a custom an
 
 | 📦 PCB Layout | 📐 Schematic Diagram |
 | :---: | :---: |
-| <img src="figures/pcb_design.png" width="100%"> | <img src="figures/pcb_schematic.png" width="100%"> |
+| <img src="figures/ECG_board.png" width="100%"> | <img src="figures/ECG_schematic.png" width="100%"> |
 
 ---
 
